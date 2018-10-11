@@ -3,7 +3,7 @@
 * white space are ignored
 * ending a string on different line is syntax error
 * after the equal sign must be a variable.
-``` 
+``` java
     //object class
     public class GradeBook{
         public void display(){
@@ -11,7 +11,7 @@
         }
     }
 ```
-```   
+```   java
       public class GradeBookTest {
         public static void main(String[] args){
             GradeBook g=new GradeBook();
