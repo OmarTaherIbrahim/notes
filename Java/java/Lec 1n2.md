@@ -1,4 +1,3 @@
-# java
 # Lec 1
 * white space are ignored
 * ending a string on different line is syntax error
@@ -19,7 +18,7 @@
         }   
       }   
 ```
-
+---
 # Lec 2
 * if a variable in a class is unintialized then it will have :
     * *NULL* string
@@ -28,4 +27,4 @@
 * we can intialize variables directly 
 * there is no default parameters in java.
 * java generates default constructor even if there is a parameterized constructor.
-* 
+---
