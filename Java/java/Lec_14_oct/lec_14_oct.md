@@ -1,6 +1,6 @@
 # Conditional Statements
 ## For
-```
+``` java
 for(statement;condition;statement){
     statement
 }
@@ -11,7 +11,7 @@ __without any break statement__ will result in _infinite loop_.
 
 ##Do while
 #####Syntax:
-```
+```java
 do{
     statements..
 }while(condition);
@@ -21,7 +21,7 @@ the _statements_ are __excuted__ then _conditions_ are __tested__.
 ##Break & Continue
 #####Break:
 when we use break we exit the control structure `for while dowhile`completely.
-```
+```java
 while(true){
     if(x==0)
         break;
@@ -31,7 +31,7 @@ while(true){
 in the code above we exit the while loop when x __equals__ 0 
 
 #####Continue:
-```
+```java
 continue;
 ```
 will continue to the conditonal statement and not execute the preceding code this turn.
@@ -51,7 +51,7 @@ will continue to the conditonal statement and not execute the preceding code thi
 we use switch when we got multiple conditions on a variable, it is a tidier version of if/else 
 statements.
 #####Synatx:
-```
+```java
 switch(1%3){
     case 0:
         System.out.println("i =0");
