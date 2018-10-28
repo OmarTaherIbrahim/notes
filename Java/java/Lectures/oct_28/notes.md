@@ -1,11 +1,11 @@
-##Constructors
+## Constructors
 ```java 
 Time t1=new Time(1);
 Time t2= new Time(t1);//copy constsructor is a copy of t1
 Time t3=t1; // is a refrence of t1
 ```
 
-###String 
+### String 
 ```java
 String s1=new String("ali");
 String s2="ali";
@@ -39,7 +39,7 @@ if(s1==s2){
 + here `s2` will equal `ok`.
 + __only when we use `new` keyword two strings will refrence two different objects__
 
-##static
+## static
 + static method can call both static and non-static method/varibles
 + a static method can be called from a object or from the class.
 ```java
@@ -60,6 +60,6 @@ public class a{
 ```
 
 
-##package access 
+## package access 
 + it isn't recommended since, it is a againist OOP principles.
 + you can access any variable or method in the same package trough package access.

@@ -1,5 +1,5 @@
-#java
-#Lec 1
+# java
+# Lec 1
 * white space are ignored
 * ending a string on different line is syntax error
 * after the equal sign must be a variable.
@@ -20,7 +20,7 @@
       }   
 ```
 
-#Lec 2
+# Lec 2
 * if a variable in a class is unintialized then it will have :
     * *NULL* string
     * *0* int ..

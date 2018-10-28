@@ -1,7 +1,7 @@
-#Static 
+# Static 
 - methods can be static and class can be __static__
  
-##Math
+## Math
 Math is a standard java lib that uses static methods.
 - `Math.pow(2,3);`
 - `Mathabs();`
