@@ -1,4 +1,4 @@
-#Array od objects
+# Array od objects
 ```java 
 Account[] listAccount=new Account[5];
 listAccount[0].method();
@@ -10,7 +10,7 @@ String[] list=new String[10];
 System.out.println(list[0]);
 ```
 
-##Execption handling
+## Execption handling
 + it is a __good practice__ to use `try catch` blocks when we don't have control on the indexs of the array.
 + i.e.:
 ```java
@@ -25,7 +25,7 @@ try{
 
 + `ArrayIndexOutOfBound` is an expection for array index that is out of bound and isn't in the range of the array.
 
-##For int x : array
+## For int x : array
 + way one:
 ```java
 public static void printArray(int [] a){
@@ -48,7 +48,7 @@ public static void printArray(object [] a){
         x.method("hello");
 }
 ```
-##multiple parameters
+## multiple parameters
 
 ```java
 public static void meth(int x ,double ... a){
@@ -57,13 +57,13 @@ public static void meth(int x ,double ... a){
 ```
 + using `double ... a` will let us pass as much as we want double in the parameters
 
-##java.util.Arrays
+## java.util.Arrays
 ```java
 import java.util.Arrays;
 ```
 + has many useful method that we can use .[Array docs](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html)
 
-##ArrayList
+## ArrayList
 syntax:
 ```java
 ArrayList<String> list=new ArrayList<string>;
