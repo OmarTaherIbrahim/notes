@@ -63,3 +63,9 @@ public class a{
 ## package access 
 + it isn't recommended since, it is a againist OOP principles.
 + you can access any variable or method in the same package trough package access.
+## final
++ used to set a variable as constant
+```java
+final int NNUMBER=10;
+```
++ programming  rule, we write the name of the final variable __all capatail letters__ , __seperated__ with _underscores_.
