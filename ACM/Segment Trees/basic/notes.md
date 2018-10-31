@@ -13,4 +13,4 @@ __Segment tree__ is a __binary tree__ used for _storing_ the _intervals_ or _seg
     3. If node _A1_ is __the parent__ of _A2_ & _A3_ and **_A1_[ I : J ]** 
         1. then **_A2_[ I : J/2 ]**  
         2. ___A3_[(J / 2) + 1 : J ]__
-    4. The __Height__ of the Segment Tree will be **__log_2__**
+    4. The __Height__ of the Segment Tree will be  $k_{n+1}$ $n^2$
