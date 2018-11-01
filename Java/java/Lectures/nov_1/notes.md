@@ -5,24 +5,37 @@
 ####Student class
 ```java
 public class student{
-private String name;
+    private String name;
+
     public Student(String name){
         set(name);
     }
-    public setName(String s){ name = s; }
-    public getName(){ return name; }
+
+    public setName(String s) {
+         name = s; 
+    }
+    public getName(){ 
+        return name; 
+    }
 }
 ```
 ####Graduate Student class
 ```java
 public class GraduteStudent extends Student{
+
     private String programe;
+
     Public GraduteStudent ( String n, String p) {
         super(n);
         programe=p;
     }
-    public setPrograme( String s ) { programe = s;}
-    public getPrograme() { return programe; }
+
+    public setPrograme( String s ) { 
+        programe = s;
+    }
+    public getPrograme() { 
+        return programe;
+    }
 }
 ```
 we called `supe(n);` in the constructor.
