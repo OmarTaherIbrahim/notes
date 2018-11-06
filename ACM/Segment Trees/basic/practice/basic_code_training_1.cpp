@@ -41,7 +41,7 @@ int get (int u, int s, int e) {
         return seg[u];
     }
     
-    return (( get (u * 2,s,(s+e)/2) > get (u * 2+1,(s+e)/2+1,e) ) ? get (u * 2+1,(s+e)/2+1,e) : get (u * 2,s,(s+e)/2));
+    return min( get (u * 2,s,(s+e)/2), get (u * 2+1,(s+e)/2+1,e) );
 }
 void update(int u, int s, int e) {
     if(s > r || e < l)
@@ -62,7 +62,7 @@ int main(){
     int m;
     cin>>n>>m;
     arry.resize(n + 1);
-    seg.resize(n * 2 + 1);
+    seg.resize(n * 4 + 1);
     for(int i = 1, x; i <= n; i++){
         cin>>arry[i];
     }

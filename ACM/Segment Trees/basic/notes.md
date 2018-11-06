@@ -72,3 +72,85 @@ goes to the __left child__ [ **_U * 2_** ] first then we go to the __right child
 ```
 since in this Segment Tree we are __calculating the sum__ in a range we add the __child nodes__ ( `seg[u * 2]` , `seg[u * 2 + 1]` ) to the __parent__ ( `seg[u]` ).
 here we can __change it__ to what ever we might need.
+
+### Get Function
+```c++
+int get (int u, int s, int e){
+    if (s > r || e < l)
+        return 0;
+    if (s >= l || e <= r)
+        return seg[u];
+    return get (u * 2, s, (s + e) / 2) + get (u * 2 +1, (s + e) / 2 + 1, e);
+}
+```
+#### 1. Base Case ( two )
+##### 1. out of range
+```c++
+    if( s > r || e < l) return;
+```
+this checks if we are out of __the range__ either our __start__ is after the _end_ of the _current node range_ `s > r` or our __end__ is _before_ the _start_ of the _current node_ `e < l`. 
+##### 2. we are inside of range
+```c++
+    if( s >= l && e <= r ) {
+        return seg[u];
+    }
+```
+this checks if we are __inside the range__ which is our __start__ is _bigger or equal_ than the range ` s >= l` __while__ our __end__ is _smaller or equal_ than the range ` e <= r`. 
+>the relation between start being >= than the range and end being <= than the range is AND '&&' not or
+
+
+#### 2. RETURN
+```c++ 
+return get ( u * 2, s, (s + e) / 2) + get (u * 2 + 1, (s + e) / 2 + 1);
+```
+the first call gets the __Right child__ ` u * 2` , the second call gets the __Left child__ `u * 2 + 1` .
+the first call gets the __first half of the range__ `[s , (s + e) / 2]`, the second call gets the __second half of the range__ `[(s + e) / 2 +1, e]`
+
+### Update Function
+```c++
+void update ( int u, int s, int e) {
+    if( s > r || e < l) return;
+    if( s == e) {
+        seg[u] = val;
+        return;
+    }
+    update (u * 2, s, (s + e) / 2);
+    update (u * 2 + 1, (s + e) / 2 + 1, e);
+    seg[u] = seg[u*2] + seg[u*2+1];
+}
+```
+this function change __one element__ `seg[u]` __to a Value__ `val`.
+
+#### 1. Base Case
+```c++
+if ( s > r || e < l) return;
+```
+this is the same base case used in get function for checking if the __node__ is __out of range__
+
+#### 2. if we found the element ( 2nd Base Case)
+```c++
+if( s == e) {
+    seg[u] = val;
+    return;
+}
+```
+we check if we reached a leaf and didn't exit from the __out of range__ check then we set it to
+the new value `seg[u] =val;` and since it's a _leaf_ we return and we don't travels more.
+
+#### 3. calling the RIGHT and LEFT childs
+```c++ 
+update ( u * 2, s, (s + se) / 2);
+update ( u * 2 + 1, (s + e) / 2 + 1, e);
+```
+these are same as always there is no new things.
+> the first call gets the __Right child__ ` u * 2` , the second call gets the __Left child__ `u * 2 + 1` .
+the first call gets the __first half of the range__ `[s , (s + e) / 2]`, the second call gets the __second half of the range__ `[(s + e) / 2 +1, e]`
+
+#### 4. Calculating the new value 
+```c++
+seg[u] = seg[u*2] + seg[u*2+1];
+```
+this calculates the new __parent nodes__ base on _the change on the leaf_ which either _the left_ or _the right_ 
+
+#Lazy propagation
+__Lazy propagation__ is used to help us add values to the __Segment Tree__ in a certain _range_.
