@@ -152,5 +152,4 @@ seg[u] = seg[u*2] + seg[u*2+1];
 ```
 this calculates the new __parent nodes__ base on _the change on the leaf_ which either _the left_ or _the right_ 
 
-#Lazy propagation
-__Lazy propagation__ is used to help us add values to the __Segment Tree__ in a certain _range_.
+
