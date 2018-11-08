@@ -1,4 +1,4 @@
-# Array od objects
+# Array of objects
 ```java 
 Account[] listAccount=new Account[5];
 listAccount[0].method();

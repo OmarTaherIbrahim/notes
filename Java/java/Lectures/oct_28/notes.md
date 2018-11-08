@@ -38,6 +38,7 @@ if(s1==s2){
 ```
 + here `s2` will equal `ok`.
 + __only when we use `new` keyword two strings will refrence two different objects__
++ using `Scanner` with `string` will create a `new string` so we must use `.equals()`
 
 ## static
 + static method can call both static and non-static method/varibles
