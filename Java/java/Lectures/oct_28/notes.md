@@ -27,6 +27,7 @@ if(s1.equal(s2){
 }
 ```
 + this compares the value of the two objects
++ while when we use `scanner.nextline()` or `scanner.next()`.
 ```java
 String s1="Ali";
 String s2="Ali";

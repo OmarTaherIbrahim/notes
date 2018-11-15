@@ -14,7 +14,7 @@ __Garbage collector__ destory each varible dynamically allocated.
 > Inheritance is __recommened__ when we have a class that might have a different verision over time.
 
 ## Method Overriding
-+ __Overriding__ is related to inheritance, so we can't say that a mehtod is _override_ if it doesn't have a __parent__.
++ __OverRiding__ is related to inheritance, so we can't say that a mehtod is _override_ if it doesn't have a __parent__.
 + __OverLoading__ can be done with out a parent.
   
 #### Type 1
