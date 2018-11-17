@@ -21,4 +21,4 @@ c: quotient
     2. `14 X 102`, ![](https://latex.codecogs.com/gif.latex?102=13\times7+11)
 2. If `a | c` and `a | b` the ![](https://latex.codecogs.com/gif.latex?a|(\alpha&a+\beta&b)),  α, β ∈ ℤ
     + Example: 3 | 6 and 3 | 15:
-        3| ( α6 + β15 ), ∀
+        + `3| ( α6 + β15 ), ∀ α,β ∈ ℤ`
