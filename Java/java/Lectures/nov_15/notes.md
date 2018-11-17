@@ -96,4 +96,4 @@ public class NewsFeed {
 }
 ```
 + this Class [`NewsFeed`] is using __Polymorphism__ i.e.:
-    + `public void add (Post p)` we use `Post` as a _parameter_ instead of _implementing_ __one method__ for `PhotoPost` and __one method__ for `TextPhoto` we use a __single method__, using __polymorphism__ which can be used for `PhotoPost` and `TextPost` 
+    + `public void add (Post p)` we use `Post` as a _parameter_ instead of _implementing_ __one method__ for `PhotoPost` and __one method__ for `TextPhoto` we use a __single method__, using __polymorphism__ which can be used for `PhotoPost` and `TextPost`; 
