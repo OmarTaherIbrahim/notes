@@ -22,3 +22,6 @@ c: quotient
 2. If `a | c` and `a | b` the ![](https://latex.codecogs.com/gif.latex?a|(\alpha&a+\beta&b)),  α, β ∈ ℤ
     + Example: 3 | 6 and 3 | 15:
         + `3| ( α6 + β15 ), ∀ α,β ∈ ℤ`
+                |   table | dsfds   |
+                | ------- | :-----: |
+
