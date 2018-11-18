@@ -31,6 +31,7 @@
 ### Form properties, common methods and a common event.
 #### Common Properties
 these are properties that __Form__ has.
+
 | Common Properties | Description |
 | :--: | :---: |
 | AcceptButton | __Default button__ that's clicked when you _press __Enter___. |
@@ -41,6 +42,7 @@ these are properties that __Form__ has.
 | Text | Text in th Form's ___Title bar___ |
 ### Common Methods
 These are methods that can be used _on_ __Forms__.
+
 | Common Methods | Description|
 | - | -|
 | Close | ___Closes___ a __Form__ and _releases all resourses_, such as the memory used for the _Form's contents_. A __closed Form__ cannot be reopened. |
