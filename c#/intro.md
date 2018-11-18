@@ -125,7 +125,7 @@ new System.EventHandler(this.clickButton_Click);
 ### Another way to Create Event Handlers
 + Using the Properties Windwo to create Event Handlers
 + Controls can gereate many different events.
-+ Clicking the Events icon [][thunderbolt] in the __Properties__ window, dsiplays all the events for the slected control.
++ Clicking the Events icon ![thunderbolt][thunderbolt] in the __Properties__ window, dsiplays all the events for the slected control.
 <!---  image Refrences       !--->
 [fig14]: img/14/fig_3.png
 [fig14.5]:img/14/fig_5.png
