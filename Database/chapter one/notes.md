@@ -21,4 +21,9 @@
 ### Typical DBMS Functionality
 + Define a particular database in terms of its **Data types**, __structures__, and __constraints__.
 + __Construct__ or __Load__ the __*initial database* contents__ on a secondary storage medium.
++ Manipulating the database:
+    + Retrieval: Querying, generating reports
+    + __Modification:__ __insertions__, __deletions__ and __updates__ to its content 
+    + Accessing the database through Web applicatons
++ __Viewing__ : Processing and Sharing by a set of consurrent users and application programs - yet, keeping all data valid and consistent.
 + 
