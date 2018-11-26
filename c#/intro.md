@@ -126,6 +126,8 @@ new System.EventHandler(this.clickButton_Click);
 + Using the Properties Windwo to create Event Handlers
 + Controls can gereate many different events.
 + Clicking the Events icon ![thunderbolt][thunderbolt] in the __Properties__ window, dsiplays all the events for the slected control.
+![][fig14.8]
++ [C# docs][C# docs]
 <!---  image Refrences       !--->
 [fig14]: img/14/fig_3.png
 [fig14.5]:img/14/fig_5.png
@@ -134,3 +136,4 @@ new System.EventHandler(this.clickButton_Click);
 [tip14.1]:img/14/tip_1.png
 [fig14.8]:img/14/fig_8.png
 [thunderbolt]:img/14/thunderbolt.png
+[C# docs]:https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms?view=netframework-4.7.2
