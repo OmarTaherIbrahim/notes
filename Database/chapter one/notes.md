@@ -119,5 +119,5 @@
 + Main inhibitors (costs) of using a DBMS.
 + When a DBMS may be unnecessary
 + When a DBMS may be infeasible.
-+ When a DBMS may be suffice.
++ When no DBMS may suffice.
 
